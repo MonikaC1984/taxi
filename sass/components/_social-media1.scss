@@ -1,0 +1,29 @@
+.social-media1 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 70px;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+    padding: 0;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+
+    background-color: var(--color-par);
+    fill: var(--color-header);
+    margin-left: 0px;
+    margin-top: 20px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: var(--logo1-color);
+      fill: var(--color-header);
+    }
+  }
+}

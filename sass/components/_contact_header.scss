@@ -1,0 +1,91 @@
+/* kontakt */
+
+.contact {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 74px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: 15px;
+    margin-left: auto;
+    min-width: 320px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__icon-tel {
+    fill: var(--color-par);
+    margin-right: 10px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      margin-right: 6px;
+      width: 10px;
+      height: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 10px;
+      height: 16px;
+    }
+  }
+
+  &__icon-mail {
+    fill: var(--color-par);
+    flex-wrap: nowrap;
+    margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      margin-right: 6px;
+      width: 14px;
+      height: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+    }
+  }
+}
+
+// Reguła dla linku
+
+.contact__link {
+  color: var(--color-par);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-header);
+    color: var(--logo1-color);
+    border-color: var(--logo1-color);
+    fill: var(--logo1-color);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: var(--logo1-color);
+  }
+}

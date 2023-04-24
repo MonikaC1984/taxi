@@ -1,0 +1,25 @@
+/* sekcje */
+
+.section {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+
+  &__what-we-do {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+}
+.section--team {
+  background-color: var(--filter-color);
+}
+
+.section--footer {
+  background-color: var(--background-color);
+  padding: 60px 0;
+}

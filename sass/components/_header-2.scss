@@ -1,0 +1,19 @@
+.header-2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-h2);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    margin-bottom: 50px;
+  }
+}
+.header-2--hide {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}

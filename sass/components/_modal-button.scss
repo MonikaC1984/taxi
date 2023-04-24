@@ -1,0 +1,24 @@
+.modal-button {
+  display: block;
+  margin-top: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  background: var(--logo1-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-header);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--logo1-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 124px;
+    margin-top: 30px;
+  }
+}

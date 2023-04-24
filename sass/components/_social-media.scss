@@ -1,0 +1,24 @@
+.social-media {
+  display: flex;
+  margin: 16px auto 18px auto;
+  width: 206px;
+  height: 44px;
+  align-items: center;
+  justify-content: space-around;
+
+  &__item {
+    padding: 12px 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-header);
+    fill: var(--svg-color-fill);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: var(--logo1-color);
+      fill: var(--color-header);
+    }
+  }
+}

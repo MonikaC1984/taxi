@@ -1,0 +1,18 @@
+.newsletter-footer {
+  justify-content: center;
+  margin: 0 auto;
+
+  &__text {
+    color: var(--color-header);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+}
